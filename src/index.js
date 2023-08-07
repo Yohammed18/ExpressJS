@@ -6,10 +6,16 @@ const app = express();
 let router = express.Router();
 //initialize a port that will be use by the server
 const PORT = 3000;
+//create an array that will be use by the get response to return
+let citites = [
+    {"id":1, "name": 'Boston'},
+    {"id":2, "name": 'New York'},
+    {"id":3, "name": 'Chicago'}
+]
 
 //create GET to return a list of cities
 router.get('/', (request, response, next)=>{
-    response.send('Boston')
+    response.status(200).send(citites)
 })
 
 //configure the router so all routers all prefixed with /api/v1
