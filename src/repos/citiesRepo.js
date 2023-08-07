@@ -1,14 +1,18 @@
+//module use to read or write in a file
+const fs = require('fs')
+const FILE_NAME = '../assets/cities.json';
+
 let cititesRepo = {
-    get: ()=>{
-        return [
-            {"id":1, "name": 'Boston'},
-            {"id":2, "name": 'New York'},
-            {"id":3, "name": 'Chicago'},
-            {"id":4, "name": 'Miami'},
-            {"id":5, "name": 'Indiana'}
-        ]
+    //promise design patter
+    get: function(resolve, reject){
+        fs.readFile(FILE_NAME, function(err, data){
+            if(err){
+                reject(err)
+            }else{
+                resolve(JSON.parse(data))
+            }
+        })
     }
 }
-
 
 module.exports = cititesRepo;

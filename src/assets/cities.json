@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Boston",
+        "state": "Massacusetts",
+        "imgURL": "https://www.freepik.com/free-photo/boston_26743728.htm#query=Boston&position=0&from_view=search&track=sph"
+    },
+    {
+        "id": 2,
+        "name": "New York",
+        "state": "New York",
+        "imgURL": "https://www.freepik.com/free-photo/beautiful-view-empire-states-skyscrapers-new-york-city_8857815.htm#query=new%20york&position=1&from_view=keyword&track=ais"
+    },
+    {
+        "id": 3,
+        "name": "Chicago",
+        "state": "Illinois",
+        "imgURL": "https://www.freepik.com/free-photo/chicago-skyline-panorama-aerial-view_26741672.htm#query=chicago&position=0&from_view=search&track=sph"
+    },
+    {
+        "id": 4,
+        "name": "Miami",
+        "state": "Florida",
+        "imgURL": "https://www.freepik.com/free-photo/miami-night-scene_26923745.htm#query=Miami&position=0&from_view=search&track=sph"
+    },
+    {
+        "id": 5,
+        "name": "Gary",
+        "state": "Indiana",
+        "imgURL": "https://www.freepik.com/free-photo/urban-city-skyline-sunset_26741919.htm#query=Gary%20Indiana&position=0&from_view=search&track=ais"
+    }
+]
+
