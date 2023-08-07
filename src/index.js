@@ -15,7 +15,14 @@ let citites = [
 
 //create GET to return a list of cities
 router.get('/', (request, response, next)=>{
-    response.status(200).send(citites)
+    // response.status(200).send(citites)
+    //JSON evnvelope used to return data in a JSON object. (Added additional information for the user.)
+    response.status(200).json({
+        "status":200,
+        "statusText":"OK",
+        "message":"All cities have been retrieved.",
+        "data":citites
+    })
 })
 
 //configure the router so all routers all prefixed with /api/v1
